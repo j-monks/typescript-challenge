@@ -1,0 +1,18 @@
+{
+  "name": "Node.js & TypeScript",
+  "runArgs": ["--init"],
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "16-bullseye"
+    }
+  },
+
+  "postCreateCommand": "npm install",
+
+  "settings": {},
+
+  "extensions": [],
+
+  "remoteUser": "node"
+}
